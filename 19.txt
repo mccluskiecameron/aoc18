@@ -1,0 +1,36 @@
+00 goto 17
+> 01 regs[5] = 1
+> 02 regs[2] = 1
+> 03 regs[4] = regs[5] * regs[2]
+04 
+05 if(regs[4] == regs[3]) goto 7 else goto 8
+> 
+> 07 RES += regs[5]
+> 08 regs[2] += 1
+09 
+10 if(regs[2] > regs[3]) goto 12 else goto 3
+11 
+12 regs[5] += 1
+13 #regs[4] = regs[5] > regs[3]
+14 if(regs[5] > regs[3]) done else goto 2
+> #15 goto 2
+> #16 done
+17 regs[3] += 2
+18 regs[3] **= 2
+19 regs[3] *= 19
+20 regs[3] *= 11
+21 regs[4] += 3
+22 regs[4] *= 22
+23 regs[4] += 18
+24 regs[3] += regs[4]
+25 goto 26 + RES
+26 goto 1
+27 regs[4] = 27
+28 regs[4] *= 28
+29 regs[4] += 29
+30 regs[4] *= 30
+31 regs[4] *= 14
+32 regs[4] *= 32
+33 regs[3] += regs[4]
+34 RES = 0
+35 goto 1
